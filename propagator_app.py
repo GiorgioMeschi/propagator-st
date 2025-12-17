@@ -48,7 +48,7 @@ with st.sidebar:
             st.success(f"Ignition set to: {st.session_state.clicked_lat:.6f}, {st.session_state.clicked_lng:.6f}")
         else:
             st.warning("No clicked point available. Click the map first.")
-    wind_speed = st.slider("Wind speed (m/s)", 0.0, 80.0, 10.0, 1.0)
+    wind_speed = st.slider("Wind speed (km/h)", 0.0, 80.0, 10.0, 1.0)
     wind_dir = st.slider("Wind direction (deg clockwise from North)", 0.0, 360.0, 90.0, 1.0)
     rel_humidity = st.slider("Fuel moisture", 0, 100, 0, 1)
     realizations = st.number_input("Realizations", 1, 100, 10, 1)
