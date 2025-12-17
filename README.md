@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ```
 3) run streamlit and use propagator on localhost
 ```  
-streamlit run propagator.py
+streamlit run propagator_app.py
 ```
 
 
