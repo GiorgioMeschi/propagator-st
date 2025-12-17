@@ -2,7 +2,6 @@
 
 #%%
 
-# app.py — compact, cleaned version
 import streamlit as st
 import numpy as np
 import tempfile
@@ -52,8 +51,8 @@ with st.sidebar:
     wind_dir = st.slider("Wind direction (deg clockwise from North)", 0.0, 360.0, 90.0, 1.0)
     rel_humidity = st.slider("Fuel moisture", 0, 100, 0, 1)
     realizations = st.number_input("Realizations", 1, 100, 10, 1)
-    max_time_hour = st.number_input("Max sim time (h)", 1, 24, 1, 1)  #("Max sim time (s)", 60, 86400, 3600, 60)
-    max_time = max_time_hour * 3600
+    max_time_hour = st.number_input("Max sim time (h)", 1, 24, 1, 1) 
+    max_time = max_time_hour * 3600 # convert to seconds
     st.markdown("---")
     st.markdown("**Ignition**")
     run = st.button("Run simulation")
